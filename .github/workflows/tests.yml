@@ -25,6 +25,8 @@ jobs:
           python -m pip install --no-deps -e .
       - name: Run synthetic regression and publication checks
         run: python -m unittest discover -s tests -v
+      - name: Run global temporal matching tests
+        run: python -m unittest discover -s protocol_revision/tests -v
       - name: Check command-line entry point
         run: python -m saa_baseline --help
       - name: Compile source and tests

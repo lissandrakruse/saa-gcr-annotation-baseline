@@ -28,3 +28,7 @@ Only load joblib/pickle artifacts that you produced or independently trust: load
 ## License
 
 The code in this repository is available under the [MIT License](LICENSE). This license does not cover data, annotations, third-party materials or trained artifacts that are not included here. External dependencies retain their own licenses.
+
+## Temporal matching revision
+
+A separate [global temporal matching entry point](protocol_revision/README.md) implements maximum-cardinality matching followed by maximum expanded overlap, exports boundary offsets separately, and documents acquisition-gap and terminal-sample conventions. It is code-only, with synthetic tests; it does not replace the existing supported-IoU evaluation or constitute an upstream v0.2 release.

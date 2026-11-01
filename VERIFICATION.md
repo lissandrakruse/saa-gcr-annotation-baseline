@@ -13,3 +13,7 @@ python -m compileall -q src tests
 Local checks passed on CPython 3.12.14 with the pinned dependencies. GitHub Actions runs synthetic tests in Python 3.12 on Ubuntu with read-only repository permissions. Check Actions for the status of a specific commit.
 
 Full reproduction requires separately obtained authorized inputs and is not run by public CI. These checks do not establish physical accuracy, data rights or an independent evaluation. Cross-platform bitwise identity is not guaranteed.
+
+## Temporal matching revision (1 November 2026)
+
+The separate `protocol_revision` entry point has ten additional synthetic tests, including an exhaustive oracle over 100 random small graphs. All 38 existing tests and these ten tests passed locally. The new tests are included in CI. Raw-source reproduction is performed only with separately authorized local inputs; empirical outputs are not published here.
